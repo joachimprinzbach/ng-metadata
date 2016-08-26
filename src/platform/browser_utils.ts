@@ -32,7 +32,7 @@ export function createBootstrapFn(bootstrapFn: Function = angular.bootstrap.bind
 
     const ngModule = bundle( rootComponent, providers );
     const ngModuleName = ngModule.name;
-    const strictDi = true;
+    const strictDi = false;
     const element = document;
 
     if ( assertionsEnabled() ) {
